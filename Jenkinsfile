@@ -1,10 +1,11 @@
 pipeline{
-    agnet any
+    agent any
+
     stages{
-         stage("build"){
-              steps{
-                  sh echo "hii this is my $BUILD_ID trigger"
-              }
-         }
+        stage("build"){
+            steps{
+                sh echo "hii this is my $BUILD_id trigger"
+            }
+        }
     }
 }
