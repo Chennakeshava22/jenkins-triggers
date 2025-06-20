@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                sh echo "hii this is my trigger"
+                sh 'echo "hii this is my trigger"'
             }
         }
     }
