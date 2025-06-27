@@ -263,7 +263,7 @@ data "aws_route53_zone" "zone" {
 
 resource "aws_route53_record" "alb_dns" {
   zone_id = data.aws_route53_zone.zone.zone_id
-  name    = "www"
+  name    = "new"
   type    = "A"
 
   alias {
