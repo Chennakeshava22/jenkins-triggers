@@ -218,7 +218,6 @@ resource "aws_launch_template" "web_template" {
               systemctl enable httpd
               systemctl start httpd
               echo "Welcome to my page" > /var/www/html/index.html
-              aws s3 cp s3://chennabuck/ /var/www/html/ --recursive
               EOF
   )
 
